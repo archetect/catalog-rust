@@ -1,8 +1,26 @@
 ---
 entries:
-  - archetype:
-      description: Rust CLI
-      source: git@github.com:archetect/archetype-rust-cli.git
-  - archetype:
-      description: Rust CLI Workspace
-      source: git@github.com:archetect/archetype-rust-cli-workspace.git 
+
+  - group:
+      description: CLI
+      entries:
+        - archetype:
+            description: Rust CLI
+            source: https://github.com/archetect/archetype-rust-cli.git
+        - archetype:
+            description: Rust CLI Workspace
+            source: https://github.com/archetect/archetype-rust-cli-workspace.git
+
+  - group:
+      description: Actix
+      entries:
+        - archetype:
+            description: Actix / Diesel 12-Factor Microservice
+            source: https://github.com/archetect/archetype-rust-service-actix-diesel-workspace.git
+            
+  - group:
+      description: Tokio
+      entries:
+        - archetype:
+            description: Basic Tokio Application
+            source: https://github.com/archetect/archetype-rust-tokio-basic.git
