@@ -12,12 +12,21 @@ entries:
             source: https://github.com/archetect/archetype-rust-cli-workspace.git
 
   - group:
-      description: Actix
+      description: Service
       entries:
-        - archetype:
-            description: Actix / Diesel 12-Factor Microservice
-            source: https://github.com/archetect/archetype-rust-service-actix-diesel-workspace.git
-            
+        - group:
+            description: gRPC
+            entries:
+              - archetype:
+                  description: Tonic gRPC 12-Factor Microservice
+                  source: https://github.com/archetect/archetype-rust-service-tonic-workspace.git
+        - group:
+            description: RESTful
+            entries:
+              - archetype:
+                  description: Actix / Diesel 12-Factor Microservice
+                  source: https://github.com/archetect/archetype-rust-service-actix-diesel-workspace.git
+
   - group:
       description: Tokio
       entries:
